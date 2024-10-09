@@ -13,6 +13,7 @@
 docker run --detach --name songs_db --publish 127.0.0.1:27017:27017 mongo:4.4
 
 3. **Import the data**
+
 mongoimport --db songs_db --collection songs --file songs.json --jsonArray
 
 3. **Run the flask app**
