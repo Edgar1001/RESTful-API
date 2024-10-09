@@ -1,0 +1,11 @@
+
+
+For the Route D, I have used curl command to add two different ratings to the same Song_id, 
+this way for the Route E later on, average is made taking into account these two different ratings.
+
+
+curl -X POST http://localhost:5000/rate -H "Content-Type: application/json" 
+-d '{"song_id": "67063c9bc35055097b4f78c0", "rating": 5}'
+
+curl -X POST http://localhost:5000/rate -H "Content-Type: application/json" 
+-d '{"song_id": "67063c9bc35055097b4f78c0", "rating": 1}'
